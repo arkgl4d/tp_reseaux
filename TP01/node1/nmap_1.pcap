@@ -1,0 +1,10 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2025-02-13 11:41 CET
+Nmap scan report for 10.1.1.100
+Host is up (0.00041s latency).
+MAC Address: BC:24:11:DC:8B:E7 (Unknown)
+Nmap scan report for dhcp (10.1.1.253)
+Host is up (0.00031s latency).
+MAC Address: BC:24:11:06:53:52 (Unknown)
+Nmap scan report for 10.1.1.101
+Host is up.
+Nmap done: 256 IP addresses (3 hosts up) scanned in 3.93 seconds
