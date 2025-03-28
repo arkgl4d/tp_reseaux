@@ -1,0 +1,15 @@
+
+- name: Ajouter un utilisateur sur les routeurs Cisco
+  hosts: 
+   - r1
+   - r2
+  gather_facts: no
+  tasks:
+    - name: Ajouter un utilisateur avec un mot de passe
+      cisco.ios.ios_user:
+        name: admin2
+        configured_password: "aze+123"
+        privilege: 15
+        state: present
+      become: yes
+      become_method: enable

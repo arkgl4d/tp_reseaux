@@ -1,0 +1,13 @@
+---
+- name: Configurer le client NTP sur r1 et r2
+  hosts:
+    - r1
+    - r2
+  gather_facts: no
+  tasks:
+    - name: Configurer bastion comme serveur NTP
+      cisco.ios.ios_config:
+        lines:
+          - ntp server 10.3.30.100
+        save_when: always
+

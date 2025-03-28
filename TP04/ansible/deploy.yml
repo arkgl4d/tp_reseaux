@@ -1,0 +1,8 @@
+- name: meo
+  hosts: routers
+  gather_facts: no
+  tasks:
+    - name: Show interfaces status
+      ios_command:
+        commands:
+          - show ip interface brief
